@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="myFunction()">
+        <lebel for="username">enter your username</lebel><br>
+        <input type="text" id="name"><br>
+        <lebel for="password">enter your password</lebel><br>
+        <input type="password" id="password"><br>
+        <lebel for="email">enter your email</lebel><br>
+        <input type="email" id="email"><br>
+        <input type="submit" id="submit"><br>
+    </form>
+    <script>
+        function myFunction(){
+        let name= document.getElementById("name").value
+        let password= document.getElementById("password").value
+        let email= document.getElementById("email").value
+        let namePattern =/^[A-Za-z 0-5@]+$/   //imp represent as RegEx name ragular expration.
+        if(name===""){
+            alert("enter your name")
+            return false;
+        }
+        if(!name.match(namePattern)){
+            alert("you can enter characters and number till 5")
+            return false;
+        }
+        if(password.length<6){
+            alert("enter your password")
+            return false;
+        }
+        if(email===""){
+            alert("enter your email")
+            return false;
+        }
+        alert("your form is submitted")
+            return true
+        }
+
+        
+
+    </script>
+</body>
+</html>

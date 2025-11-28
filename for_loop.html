@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>var day=5;
+        var dayname;
+        switch(day){
+            case 1:
+                dayname="Monday";
+                break;
+            case 2:
+                dayname="Tuesday";
+                break;
+            case 3: 
+                dayname="wednesday";
+                break;
+            case 4:
+                dayname="thrusday";
+                break;
+            case 5:
+                dayname="Friday";
+                break;
+            case 6:
+                dayname="Saturday";
+                break;
+        }
+        document.getElementedById("demo").innerHTML=result;</script>
+</body>
+<!-- <body>
+    <p id="demo"></p>
+    <script>
+        let i=0;
+        let result="";
+        for(i=1;i<11;i++){
+            result+=(2*i)+"<br>"
+        }
+        document.write(result);  //add always print statement
+
+            </script>
+</body> -->
+<body>
+    <p id="demo"></p>
+    <script>
+        let i=0;
+        let result="";
+        for(i=1;i<11;i++){
+            if(i==4){
+                continue;
+            }
+                result+=(2*i)+"<br>"
+            
+        }
+        document.write(result);  //add always print statement
+
+            </script>
+</html>
