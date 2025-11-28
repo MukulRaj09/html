@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    textarea {
+        resize: vertical;
+        height: 50px;
+
+    }
+    button {
+        background-color: blue;
+    }
+    .container {
+        width: 300px;
+        margin: 60px;
+        background-color: rgb(252, 254, 248);
+        border: 2px;
+        padding: 20px 30px 30px;
+        box-shadow: 2px 3px 5px rgb(132, 121, 121);
+    } 
+</style>
+<body>
+    <div class="container">
+        <form>
+        
+            <h4>registration form</h4> 
+            <lebel for="name">name</lebel><br>
+            <input type="text" id="name"><br>
+            <lebel for ="password"> password</lebel><br>
+
+            <input type="text"><br>
+            <label for="email" id="email">email</label><br>
+            <input type="text"><br>
+            <lebel for="gender" > gender</lebel><br>
+            <select aria-level="select your gender">
+                <option>select your gender</option>
+                <option>male</option>
+                <option>female</option>
+            </select><br>
+            <lebel for="bio">bio</lebel><br>
+            <textarea id="bio" name="bio"></textarea><br>
+            <button type="submit">submit</button>
+         </form>
+    </div>
+</body>
+</html>
