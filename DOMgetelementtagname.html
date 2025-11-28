@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hello</p>
+    <p class="demo1">hello2</p>
+    <p class="demo1">hello6</p>
+    <p class="demo2">hello3</p>
+    <p class="demo2">hello7</p>
+    <p class="demo3">hello4</p>
+    <p class="demo4">hello5</p>
+    <p class="demo4">hello5</p>
+    <p class="demo5">hello8</p>
+
+    <script>
+        let para = document.getElementById("demo")
+        para.textContent="<b>isufevsdfioi</b>"
+        let para1 = document.getElementsByClassName("demo1")
+        for(let i=0;i<para1.length;i++){
+         para1[i].style.background="red"
+        }
+        let para2= document.querySelector(".demo2") //dpon't matter its only work for first.
+        para2.style.background="green"
+        let para3= document.querySelectorAll(".demo4")  //this will accept all demom but still not consider it, so we do indexing 
+        for(let j=0;j<para3.length;j++){
+        para3[j].style.background="blue"
+        }
+        let para5=document.createElement("p")  //this will create new element or paragraph
+        para5.textContent="this is my para "
+        document.body.appendChild(para5)  //body because we are adding in body
+        para5.style.background="yellow"
+         let imagee=document.createElement("img")
+         imagee.setAttribute("src","choper2.jpg")  //setAttribute(name, value): Sets a new value to an attribute of an element. If the attribute doesn't exist, it creates it. For example, element.setAttribute("class", "newClass") changes or adds the class attribute. It does not return a value.
+         imagee.setAttribute("width","100px")
+         imagee.setAttribute("id","imagee")
+         document.body.appendChild(imagee)
+         let source=imagee.getAttribute("id")  //getAttribute(name): Retrieves the current value of a specified attribute on an element
+         console.log(source)
+         console.log(document.images)
+         
+
+    </script>
+</body>
+</html>

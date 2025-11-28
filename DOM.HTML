@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hello</p>
+    <p class="demo1">hello2</p>
+    <p class="demo1">hello6</p>
+    <p  class="demo2">hello3</p>
+    <p class="demo3">hello4</p>
+    <p class="demo4">hello5</p>
+
+    <script>
+        let para = document.getElementById("demo")
+        para.textContent="<b>isufevsdfioi</b>"
+        let para1 = document.getElementsByClassName("demo1")
+        for(let i=0;i<para1.length;i++){
+         para1[i].style.background="red"
+        }
+    </script>
+</body>
+</html>
